@@ -1,0 +1,33 @@
+@nav-padding: 15px;
+
+nav {
+  background: #efefef;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  padding: 0 @nav-padding;
+
+  .logo {
+    display: inline-block;
+    line-height: 50px;
+  }
+  ul {
+    list-style: none;
+    display: inline-block;
+    right: @nav-padding;
+    position: absolute;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+
+      a {
+        color: #000;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
