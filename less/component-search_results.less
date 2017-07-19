@@ -5,14 +5,21 @@
   }
 
   li {
-    margin: 10px 0;
+    margin: 10px 0; 
   }
 
   .date,
   .location {
-    color: #969696;
+    color: @color-medium_grey;
+    .base-font;
   }
   .title {
     text-decoration: none;
+    color: blue;
+    .base-font(@weight: @weight-semi_bold);
+
+    &:hover {
+      color: darken(blue, 20%)
+    }
   }
 }

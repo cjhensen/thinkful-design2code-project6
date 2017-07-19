@@ -7,6 +7,19 @@ nav {
   width: 100%;
   padding: 0 @nav-padding;
 
+  a {
+    .base-font(@weight: @weight-semi_bold);
+    color: #000;
+
+    &:hover {
+      cursor: pointer;
+      color: #a3a3a3;
+    }
+    &:focus {
+      color: #a3a3a3;
+    }
+  }
+
   .logo {
     display: inline-block;
     line-height: 50px;
@@ -20,14 +33,6 @@ nav {
     li {
       display: inline-block;
       margin: 0 5px;
-
-      a {
-        color: #000;
-
-        &:hover {
-          color: red;
-        }
-      }
     }
   }
 }
